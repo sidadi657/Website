@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
+
+
+    <title>Enviromental Issues</title>
+
+</head>
+
+<body>
+  <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">Explore</a>
+  <a href="#contact">Contact us</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+
+<div id="first-section">
+<div id="photos" class="introImage responsive">
+  <div class="textHolder center">
+    <h1 class="center textBox"><span class="a">Environmental Issues</span></h1>
+    <h2 class="center"><span class="b">Environmental issues are the harmful effects of human activities on the environment. These include pollution, overpopulation, waste disposal, climate change, global warming, the greenhouse effect, etc.
+      Various environment protection programs are being practised at the individual, organizational and government levels with the aim of establishing a balance between man and the environment.<br />Some of the current environmental issues that require urgent attention are:</span></h2>
+  </div>
+</div>
+</div>
+    <section>
+      <div class="container reveal">
+        <h2>Caption</h2>
+        <div class="text-container">
+          <div class="text-box">
+            <h3>Section Text</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              eius molestiae perferendis eos provident vitae iste.
+            </p>
+          </div>
+          <div class="text-box">
+            <h3>Section Text</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              eius molestiae perferendis eos provident vitae iste.
+            </p>
+          </div>
+          <div class="text-box">
+            <h3>Section Text</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              eius molestiae perferendis eos provident vitae iste.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container reveal">
+        <h2>Caption</h2>
+        <div class="text-container">
+          <div class="text-box">
+            <h3>Section Text</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              eius molestiae perferendis eos provident vitae iste.
+            </p>
+          </div>
+          <div class="text-box">
+            <h3>Section Text</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              eius molestiae perferendis eos provident vitae iste.
+            </p>
+          </div>
+          <div class="text-box">
+            <h3>Section Text</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              eius molestiae perferendis eos provident vitae iste.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container reveal">
+        <h2>Caption</h2>
+        <div class="text-container">
+          <div class="text-box">
+            <h3>Section Text</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              eius molestiae perferendis eos provident vitae iste.
+            </p>
+          </div>
+          <div class="text-box">
+            <h3>Section Text</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              eius molestiae perferendis eos provident vitae iste.
+            </p>
+          </div>
+          <div class="text-box">
+            <h3>Section Text</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              eius molestiae perferendis eos provident vitae iste.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 50;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
+
+</script>
+
+</body>
+
+
+</html>
