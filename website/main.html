@@ -3,21 +3,22 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Pacifico&family=Sacramento&display=swap" rel="stylesheet">
 
 
-
-  <title>Enviromental Issues</title>
+  <title>Environmental Issues</title>
 
 </head>
 
 <body>
   <div class="topnav" id="myTopnav">
-    <a href="#home" class="active">Home</a>
+    <a href="main.html" class="active">Home</a>
     <div class="dropdown">
       <button class="dropbtn" onclick="Dropdown()">Explore
         <i class="fa fa-caret-down"></i>
@@ -28,13 +29,12 @@
         <a href="#section3">Link 3</a>
       </div>
     </div>
-    <a href="#contact">Contact us</a>
-    <a href="#about">About</a>
+    <a href="about.html">About us</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
     <div class="topnavRight">
-      <a href="#support">Support the Cause</a>
+      <a href="support.html">Support the Cause</a>
     </div>
   </div>
 
@@ -59,9 +59,10 @@
           <h3>What is Climate Change?</h3>
           <p>
             Climate change usually refers to the shifts in things like precipitation, wind patterns, and temperatures over a given period.
-            Measured changes in climate could last a few years, decades, or even millions of years.
+            Measured changes in climate could last a few years, decades, or even millions of years.<span class="dots">...</span>
           </p>
         </div>
+        <div class="hide more">
         <div class="text-box">
           <h3>Causes</h3>
           <p>
@@ -110,6 +111,8 @@
             Some studies estimate that nearly 30% of plant and animal species are at risk of extinction if global temperatures continue to rise.
           </p>
         </div>
+          </div>
+          <button onclick="readMore(this)" class="btnRead">Read More</button>
       </div>
     </div>
   </section>
@@ -144,6 +147,49 @@
   </section>
 
   <section id="section3">
+    <div class="container reveal">
+      <h2>Water Pollution</h2>
+      <div class="text-container">
+        <div class="text-box">
+          <h3>What is Water Pollution?</h3>
+          <p>
+            The introduction of harmful substances into rivers, oceans, lakes and ponds, which changes the physical, chemical or biological condition of the water is called water pollution.
+            The polluted water lacks oxygen and therefore the organisms die.<span class="dots">...</span>
+          </p>
+        </div>
+        <div class="hide more">
+        <div class="text-box">
+          <h3>Causes</h3>
+          <p>
+            Many of our waterways are in poor biological condition. According to the Environmental Protection Agency (EPA),
+            46% of U.S. streams, 21% of lakes, 18% of coastal waters, and 32% of the nation’s
+            wetlands are contaminated by water pollution.<br />
+            Below are a few of the causes of Water Pollution-<br />
+            <br />
+            1)<b>Untreated Sewage</b>-Untreated sewage kills 2.2 million people each year worldwide from diarrheal diseases.In the U.S. 4.32 million people suffer from acute gastrointestinal
+            illness from contaminated public drinking water systems.In India,Chemical contamination of water, mainly through fluoride and arsenic, is present in 1.96 million dwellings.
+            These diseases stem from untreated sewage, which allows pathogens to grow and reduces the amount of oxygen in the water.
+            </br />
+            </br />
+
+            2)<b>Ocean Acidification</b>-Shellfish and coral reefs suffer serious damage from ocean acidification, also caused by global warming.
+            Scientists estimate 25% of all carbon emitted goes into the oceans.The increase in carbon dioxide changes the chemical makeup of the water.
+            This, in turn, causes the pH levels to fall, making the water more acidic.Since the 1800s,there has been a 30% increase in water
+            acidity.This is an alarming trend that creates a toxic environment for ocean wildlife.
+            </br />
+            </br />
+            3)<b>Human Activity</b>-The most significant contributor to climate change in the United States is the burning of fossil fuels for electricity, heat, and transportation.
+            Of these factors, transportation in the form of cars, trucks, ships, trains, and planes
+            emits the largest percentage of CO2–speeding up global warming and remaining a significant cause of climate change.
+          </p>
+        </div>
+        </div>
+        <button onclick="readMore(this)" class="btnRead">Read More</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="section4">
     <div class="container reveal">
       <h2>Caption</h2>
       <div class="text-container">
@@ -212,65 +258,7 @@
 
 
 
-
-  <script>
-    function Dropdown() {
-      document.getElementById("myDropdown").classList.toggle("show");
-    }
-
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function(e) {
-      if (!e.target.matches('.dropbtn')) {
-        var myDropdown = document.getElementById("myDropdown");
-        if (myDropdown.classList.contains('show')) {
-          myDropdown.classList.remove('show');
-        }
-      }
-    }
-
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-
-    function reveal() {
-      var reveals = document.querySelectorAll(".reveal");
-
-      for (var i = 0; i < reveals.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 250;
-
-        if (elementTop < windowHeight - elementVisible) {
-          reveals[i].classList.add("active");
-        } else {
-          reveals[i].classList.remove("active");
-        }
-      }
-    }
-
-    window.addEventListener("scroll", reveal);
-
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-
-    window.location.replace("#");
-
-    // slice off the remaining '#' in HTML5:
-    if (typeof window.history.replaceState == 'function') {
-      history.replaceState({}, '', window.location.href.slice(0, -1));
-    }
-  </script>
+<script src="script.js"></script>
 
 </body>
 

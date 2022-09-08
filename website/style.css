@@ -1,13 +1,47 @@
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Merriweather', serif;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+.hide{
+    display: none;
+}
+
+.btnRead{
+  font-family: 'Pacifico', cursive;
+  border: none;
+  background: none;
+  color: #04AA6D;
+  font-size: 20px;
+}
+.donate{
+  font-family: 'Pacifico', cursive;
+  border: none;
+  background: none;
+  color: #04AA6D;
+  font-size: 30px;
+}
+.support{
+  margin-left: 20px;
+  padding-bottom: 30px;
+}
+
+
+.btnRead:hover{
+  font-family: 'Pacifico', cursive;
+  border: none;
+  background: none;
+  color: #d5e1df;
+  font-size: 20px;
+}
+
+
 .topnav {
+  font-family: 'Pacifico', cursive;
   overflow: hidden;
   background-color: #86af49;
 }
@@ -44,6 +78,7 @@ html {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
+
   .topnav .topnavRight {
     display: none;
   }
@@ -70,48 +105,58 @@ html {
     display: block;
     text-align: left;
   }
+
   .topnav.responsive .topnavRight {
     float: none;
     display: block;
     text-align: left;
   }
 
-  .topnav.responsive .dropdown {float: none;}
-    .topnav.responsive .dropdown-content {position: relative;}
-    .topnav.responsive .dropdown .dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
+
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .introImage {
-    background-image: url("https://source.unsplash.com/1920x1080?nature");
+    background-image: url("https://images.pexels.com/photos/6332500/pexels-photo-6332500.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-repeat: no-repeat;
     background-size: cover;
-
-    height: 500px;
+    height: 800px;
+    width: 100%;
+    padding-top: 1px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1200px) {
   .introImage {
-    background-image: url("https://source.unsplash.com/720x600?nature");
+    background-image: url("https://images.pexels.com/photos/6332500/pexels-photo-6332500.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-repeat: no-repeat;
     background-size: cover;
-
-    height: 500px;
+    height: 800px;
+    width: 100%;
+    padding-top: 1px;
   }
 }
 
 @media screen and (max-width:768px) {
   .introImage {
-    background-image: url("https://source.unsplash.com/720x600?nature");
+    background-image: url("https://images.pexels.com/photos/6332500/pexels-photo-6332500.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-repeat: no-repeat;
     background-size: cover;
-
-    height: 700px;
+    height: 800px;
+    width: 100%;
+    padding-top: 1px;
   }
 }
 
@@ -165,10 +210,18 @@ html {
 
 .center {
   position: relative;
-  top: 40%;
+  top: 30%;
   width: 100%;
   text-align: center;
-  font-size: 18px;
+}
+
+@media (max-width: 710px) {
+  .center {
+    position: relative;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .animate-fading {
@@ -318,41 +371,39 @@ section:nth-child(1) {
 }
 
 section:nth-child(2) {
-  color: #d5e1df;
-  background: #86af49;
+  color: #86af49;
+  background: #d5e1df;
 }
 
 section:nth-child(3) {
-  color: #86af49;
-  background: #d5e1df;
-}
-
-section:nth-child(4) {
   color: #d5e1df;
   background: #86af49;
 }
 
+section:nth-child(4) {
+  color: #02B580;
+  background: #00694A;
+}
+
 section:nth-child(5) {
-  color: #86af49;
-  background: #d5e1df;
+  color: #d5e1df;
+  background: #86af49;
+}
+
+section:nth-child(6) {
+  color: #02B580;
+  background: #00694A;
 }
 
 span.a {
-  display: inline;
-  width: 100px;
-  height: 100px;
-  padding: 5px;
-  background-color: #86af49;
-  color: #d5e1df;
+  color: #1B8579;
+  font-family: 'Sacramento', cursive;
+  font-size: 95px;
 }
 
 span.b {
-  display: inline;
-  width: 100px;
-  height: 100px;
-  padding: 1px;
-  background-color: #d5e1df;
-  color: #86af49;
+  color: #D1C12C;
+  font-size: 18px;
 }
 
 footer {
